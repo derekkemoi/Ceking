@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { services } from '../../data';
-import { Import as Passport, Building2, Briefcase, Car } from 'lucide-react';
+import { Import as Passport, Building2, Briefcase, Car, ArrowRight } from 'lucide-react';
 
 const Services: React.FC = () => {
   const getIcon = (iconName: string) => {
@@ -38,7 +38,7 @@ const Services: React.FC = () => {
                 key={service.id}
                 className="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2"
               >
-                <div className="relative">
+                <div className="relative flex flex-col h-full">
                   <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300 group-hover:scale-110 transform">
                     <IconComponent 
                       size={32} 
@@ -50,9 +50,17 @@ const Services: React.FC = () => {
                     {service.title}
                   </h3>
                   
-                  <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                  <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 mb-6">
                     {service.description}
                   </p>
+
+                  <Link
+                    to={service.link}
+                    className="mt-auto inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-all duration-300 group/link"
+                  >
+                    Learn More
+                    <ArrowRight className="ml-2 w-4 h-4 transform group-hover/link:translate-x-1 transition-transform duration-300" />
+                  </Link>
                 </div>
               </div>
             );

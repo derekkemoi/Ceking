@@ -30,13 +30,12 @@ const Hero: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center sm:text-left">
           {/* Main heading with improved mobile visibility */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white animate-fade-in-up leading-tight tracking-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
-            {/* Your Gateway to<br className="sm:hidden" /> Opportunities<br className="sm:hidden" /> in Kenya */}
             Your Gateway to Kenya: Seamless Immigration & Investment Solutions
           </h1>
 
           {/* Description with improved visibility */}
           <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto sm:mx-0 animate-fade-in-up delay-200 drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]">
-          Expert support for expatriates, investors, and businesses navigating Kenya’s immigration and business setup processes
+            Expert support for expatriates, investors, and businesses navigating Kenya's immigration and investment landscape. Let us help you make Kenya your next destination for growth and success.
           </p>
 
           {/* CTA buttons with modern design */}
